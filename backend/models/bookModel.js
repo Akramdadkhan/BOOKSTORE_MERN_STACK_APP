@@ -16,9 +16,7 @@ const bookSchema = mongoose.Schema(
         },
         
     },
-    {
-        timeStamp:true,
-    }
-)
+);
+bookSchema.set('timestamps',true)
 
 export const Book = mongoose.model('Cat',bookSchema)
